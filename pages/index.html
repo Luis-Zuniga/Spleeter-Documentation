@@ -3,16 +3,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="Homepage" content="Homepage for the Engineer's Conductorless Orchestra Project, dedicated to bringing music to engineering-inclined academic environments.">
+		<meta name="Homepage" content="Homepage for comprehensive documentation on Deezer's Spleeter python library.">
 		<meta name="Author" content="Luis F. Zuniga">
-		<meta name="keywords" content="OCO, Olin, Orchestra, Engineering Orchestra, Engineers">
+		<meta name="keywords" content="Deezer, Spleeter, Documentation, Detailed">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> Engineer's Conductorless Orchestra Homepage </title>
+		<title> Spleeter Documentation </title>
 		<style>
 
-		.headPic {
-    /*width: 98vw;
-    height: 90vh;*/
+		/*.headPic {
+    width: 98vw;
+    height: 90vh;
     overflow: hidden;
 		filter: blur(0px);
 		}
@@ -20,7 +20,7 @@
 		.headPic img {
     width: 99vw;
     margin: -40px 0 0 0px;
-		}
+		}*/
 
 
 		    @font-face {
@@ -118,7 +118,7 @@
 		      width: 100%;
 
 		    }
-		    ul {
+		    /*ul {
 		      list-style-type: none;
 		      margin: 0;
 		      padding: 0;
@@ -150,7 +150,7 @@
 		    }
 		    li a:hover {
 		      background-color: #111;
-		    }
+		    }*/
 
 		    /* Container holding the image and the text */
 		    .container {
@@ -191,40 +191,71 @@
 	</head>
 	<body style="background-color: #faf7f4;">
 		<header>
-	      <ul>
-	      <li><a class-"active_page" href="index.html">Home</a></li>
-				<li><a href="grid_video.html">OCO Videos</a></li>
-	      <li><a href="grid_audio.html">OCO Scores+Audio</a></li>
-				<li><a href="early_history.html">Early History</a></li>
 
-	      </ul>
 	  </header>
 		<main>
-			<div class="headPic">
-				<img src="images/OCO_Fall2018.jpg" alt="OCO during the Fall 2018 Expo concert" ><br/>
-			</div>
-			<!--<audio src="https://drive.google.com/file/d/1I9CT0CepOK4o2Dx-7zHPtsXNLuMXq0hH/preview" type="audio/wav" alt="Demo Audio" controls preload ></audio>-->
+
 			<section>
-				<h2> An Orchestra without a Conductor? Inconceivable!</h2>
-				<p>
-					The Olin Conductorless Orchestra (OCO) - an ensemble, minus conductor - features instrumentalists in leadership, communicative, and collaborative roles. Dedicated to orchestral performance in the
-					concerted spirit of chamber music, the orchestra forges individual participation, active listening, and group-motivation into performances that have established it as the only conductorless orchestra composed of engineers-- in the world!
-				</p><p>
-					Since its Fall 2002 inception, OCO has been a Project-Based Learning (PBL) course where student soperate the classroom, and the professor contributes as guide-on-the-side, coach, and re-orchestrator of works chosen by the group. In helping to run rehearsals, students develop leadership, teamwork, and communication skills in a large team environment. With an essentially flat hierarchy that incorporates an ever-evolving sense of culture and cooperation as a working ensemble, OCO functions as a team of musicians -- regardless of position -- comprising students, faculty, and external guests, all dedicated to making good music with intensity, camaraderie, excitement, and humor.
-				</p><br/><hr/>
+				<h2> What is Spleeter?</h2>
+				<p> **Something Something** </p>
+				<p> <a href="https://github.com/deezer/spleeter">Link to the GitHub.</a> </p><br/><hr/>
 			</section>
 			<section>
-				<h2>Our Mission:</h2>
+				<h2>Spleeter Dependencies:</h2>
 				<p>
-					The purpose of this website is to share the resources that OCO has collected over the years in the hope that it proves useful to others looking to start their own Conductorless Orchestra.
-
-				</p><br/><hr/>
-			</section>
-			<section>
-				<h2>Recent Concerts:</h2>
-				<p>
-					Recent performances outside Olin include The Great Hall at Cooper Union in New York City and Powers Hall at the Needham Town Hall, both of which received standing ovations.  On April 2019, OCO performed an invited concert for the American Society for Engineering Education (ASEE) Zone 1 International Conference in Niagara Falls, NY.  OCO's performance was the first time ASEE had ever hosted an orchestra composed of student engineers; the concert received a standing ovation.
-
+					<ul>
+						<li><b>absl-py:</b><br>
+						    Tensorflow will not correctly import without it. It is a collection of libraries for building python applications. Seems to be derived from Abseil, which was a C++ library that adds functionality beyond the standard library. Unsure what it does specifically in Spleeter.</li>
+						<li><b>astor:</b><br>
+						    A library used to allow easy manipulation of Python source via the AST (Abstract Syntax Tree). https://pypi.org/project/astor/</li>
+						<li><b>audioread:</b><br>
+						    Decodes audio files using ffmpeg or whatever backend is available (alternatives include Gstreamer, Core Audio, MAD, etc.). https://pypi.org/project/audioread/</li>
+						<li><b>cffi:</b><br>
+						    Stands for "C Foreign Function Interface." Used to interact with C code. https://cffi.readthedocs.io/en/latest/</li>
+						<li><b>decorator:</b><br>
+						    Used for establishing decorators in python. Decorators take in a function, it adds functionality (i.e. more code gets executed related to the input function), and then returns it. https://pypi.org/project/decorator/</li>
+						<li><b>ffmpeg-python:</b><br>
+						    Wrapper/Bindings for interacting with ffmpeg, a multimedia framework.</li>
+						<li><b>future:</b><br></li>
+						<li><b>gast</b><br></li>
+						<li><b>google-pasta</b><br></li>
+						<li><b>grpcio</b><br></li>
+						<li><b>h5py</b><br></li>
+						<li><b>importlib-metadata</b><br></li>
+						<li><b>importlib-resources</b><br></li>
+						<li><b>joblib</b><br></li>
+						<li><b>keras-applications</b><br></li>
+						<li><b>keras-preprocessing</b><br></li>
+						<li><b>librosa</b><br></li>
+						<li><b>llvmlite</b><br></li>
+						<li><b>markdown</b><br></li>
+						<li><b>norbert</b><br></li>
+						<li><b>numba</b><br></li>
+						<li><b>numpy</b><br></li>
+						<li><b>opt-einsum</b><br></li>
+						<li><b>pandas</b><br></li>
+						<li><b>protobuf</b><br></li>
+						<li><b>pycparser</b><br></li>
+						<li><b>python-dateutil</b><br></li>
+						<li><b>pytz</b><br></li>
+						<li><b>requests:</b><br></li>
+						<li><b>resampy</b><br></li>
+						<li><b>scikit-learn</b><br></li>
+						<li><b>scipy</b><br></li>
+						<li><b>setuptools:</b><br></li>
+						<li><b>six</b><br></li>
+						<li><b>soundfile</b><br></li>
+						<li><b>spleeter:</b><br></li>
+						<li><b>tensorboard</b><br></li>
+						<li><b>tensorflow</b><br></li>
+						<li><b>tensorflow-estimator</b><br></li>
+						<li><b>termcolor</b><br></li>
+						<li><b>threadpoolctl</b><br></li>
+						<li><b>werkzeug</b><br></li>
+						<li><b>wheel</b><br></li>
+						<li><b>wrapt</b><br></li>
+						<li><b>zipp </b><br></li>
+					</ul>
 				</p><br/><hr/>
 			</section>
 
