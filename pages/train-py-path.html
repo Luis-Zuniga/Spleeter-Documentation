@@ -211,8 +211,8 @@
 			<section>
 				<h2>Steps followed by the Spleeter Training</h2>
 				<p>
-        From command line, the Spleeter train command is input: spleeter train -p configs/musdb_config.json -d /path/to/musdb <br>
-        In the file spleeter/_main_.py, 'main' function is called.<br>
+        From command line, the Spleeter train command is input: spleeter train -p configs/musdb_config.json -d /path/to/musdb <br><br>
+        The function 'main', from spleeter/_main_.py, is called.<br>
         After parsing the command, it checks to see whether it is a separate, train, or evaluate command. In this case, it is a train command.<br>
         The function 'entrypoint', from spleeter/commands/train.py, is imported.<br>
         The function 'load_configuration', from spleeter/utils/configuration.py, is called with input 'arguments.configuration'. <br>
