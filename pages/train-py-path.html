@@ -211,33 +211,16 @@
 			<section>
 				<h2>Steps followed by the Spleeter Training</h2>
 				<p>
-					<ul>
+        From command line, the Spleeter train command is input: spleeter train -p configs/musdb_config.json -d /path/to/musdb <br>
+        In the file spleeter/_main_.py, 'main' function is called.<br>
+        After parsing the command, it checks to see whether it is a separate, train, or evaluate command. In this case, it is a train command.<br>
+        The function 'entrypoint', from spleeter/commands/train.py, is imported.<br>
+        The function 'load_configuration', from spleeter/utils/configuration.py, is called with input 'arguments.configuration'. <br>
+        The function 'entrypoint', from spleeter/commands/train.py is called with inputs 'arguments' and 'params'. <br>
+  
+        <p style="margin-left: 20px">
+        From spleeter/audio/adapter.py, the get_audio_adapter function is called, takes input 'arguments.audio_adapter' and is attached to variable 'audio adapter'.<br>
 
-						<li><strong>numpy</strong><br></li>
-						<li><strong>opt-einsum</strong><br></li>
-						<li><strong>pandas</strong><br></li>
-						<li><strong>protobuf</strong><br></li>
-						<li><strong>pycparser</strong><br></li>
-						<li><strong>python-dateutil</strong><br></li>
-						<li><strong>pytz</strong><br></li>
-						<li><strong>requests:</strong><br></li>
-						<li><strong>resampy</strong><br></li>
-						<li><strong>scikit-learn</strong><br></li>
-						<li><strong>scipy</strong><br></li>
-						<li><strong>setuptools:</strong><br></li>
-						<li><strong>six</strong><br></li>
-						<li><strong>soundfile</strong><br></li>
-						<li><strong>spleeter:</strong><br></li>
-						<li><strong>tensorboard</strong><br></li>
-						<li><strong>tensorflow</strong><br></li>
-						<li><strong>tensorflow-estimator</strong><br></li>
-						<li><strong>termcolor</strong><br></li>
-						<li><strong>threadpoolctl</strong><br></li>
-						<li><strong>werkzeug</strong><br></li>
-						<li><strong>wheel</strong><br></li>
-						<li><strong>wrapt</strong><br></li>
-						<li><strong>zipp </strong><br></li>
-					</ul>
 				</p><br/><hr/>
 			</section>
 
