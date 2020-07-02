@@ -191,7 +191,7 @@
 	</head>
 	<body style="background-color: #faf7f4;">
 		<header>
-			<section>
+      <section>
         <h2>Page Navigation</h2>
         <p>
           <a href="index.html"> Homepage</a><br>
@@ -207,72 +207,12 @@
 				<p> **Something Something** </p>
 				<p> <a href="https://github.com/deezer/spleeter">Link to the GitHub.</a> </p><br/><hr/>
 			</section>
+
 			<section>
-				<h2>Spleeter Dependencies:</h2>
+				<h2>Steps followed by the Spleeter Training</h2>
 				<p>
 					<ul>
-						<li><strong>absl-py:</strong><br>
-						    Tensorflow will not correctly import without it. It is a collection of libraries for building python applications. Seems to be derived from Abseil, which was a C++ library that adds functionality beyond the standard library. Unsure what it does specifically in Spleeter.</li>
-						<li><strong>astor:</strong><br>
-						    A library used to allow easy manipulation of Python source via the AST (Abstract Syntax Tree). <br>
-								<a href="https://pypi.org/project/astor/">https://pypi.org/project/astor/</a> </li>
-						<li><strong>audioread:</strong><br>
-						    Decodes audio files using ffmpeg or whatever backend is available (alternatives include Gstreamer, Core Audio, MAD, etc.).<br>
-								<a href="https://pypi.org/project/audioread/">https://pypi.org/project/audioread/</a></li>
-						<li><strong>cffi:</strong><br>
-						    Stands for "C Foreign Function Interface." Used to interact with C code.<br>
-								<a href="https://cffi.readthedocs.io/en/latest/">https://cffi.readthedocs.io/en/latest/</a></li>
-						<li><strong>decorator:</strong><br>
-						    Used for establishing decorators in python. Decorators take in a function, it adds functionality (i.e. more code gets executed related to the input function), and then returns it.<br>
-								<a href="https://pypi.org/project/decorator/">https://pypi.org/project/decorator/</a></li>
-						<li><strong>ffmpeg-python:</strong><br>
-						    Wrapper/Bindings for interacting with ffmpeg, a multimedia framework.</li>
-						<li><strong>future:</strong><br>
-								Bridges compatability between Python 2 and Python 3 when using Python 3 codebase.<br>
-								<a href="https://pypi.org/project/future/">https://pypi.org/project/future/</a></li>
-						<li><strong>gast</strong><br>
-								Bridges compatability between the AST (Abstract Syntax Tree) of various python versions.<br>
-								<a href="https://pypi.org/project/gast/">https://pypi.org/project/gast/</a></li>
-						<li><strong>google-pasta</strong><br>
-								Enables the refactoring of python source code through AST (Abstract Syntax Tree) modifications.<br>
-								<a href="https://github.com/google/pasta">https://github.com/google/pasta</a></li>
-						<li><strong>grpcio</strong><br>
-							Unable to find description at the moment.<br>
-							<a href="https://github.com/grpc/grpc/tree/master/src/python/grpcio">https://github.com/grpc/grpc/tree/master/src/python/grpcio</a></li>
-						<li><strong>h5py</strong><br>
-							Pythonic interface for the HDF5 binary data format. Useful for storing large amounts of numberical data and manipulating the data from NumPy.<br>
-							<a href="https://www.h5py.org/">https://www.h5py.org/</a></li>
-						<li><strong>importlib-metadata</strong><br>
-							Provides access to installed package metadata, usually for third-party packages installed via Pip and other means.<br>
-							<a href="https://docs.python.org/3/library/importlib.metadata.html">https://docs.python.org/3/library/importlib.metadata.html</a></li>
-						<li><strong>importlib-resources</strong><br>
-							This is a backport of the importlib.resources module for Python 2.7 & 3.4 to 3.8. It is useful for people running Python 3.9.<br>
-							<a href="https://pypi.org/project/importlib-resources/">https://pypi.org/project/importlib-resources/</a></li>
-						<li><strong>joblib</strong><br>
-							Set of Tools to provide lightweight pipelining in Python, like simple parallel computing and transparent disk-caching of function and lazy re-evaluation. Meant to be fast.<br>
-							<a href="https://joblib.readthedocs.io/en/latest/">https://joblib.readthedocs.io/en/latest/</a></li>
-						<li><strong>keras-applications</strong><br>
-							Module of the Keras deep learning library that provides model definitions and pre-trained weights for many popular architectures, such as VGG16, ResNet50, Xception, MobileNet and others. Keras is built upon the Tensorflow library.<br>
-							<a href="https://pypi.org/project/Keras-Applications/">https://pypi.org/project/Keras-Applications/</a><br>
-							<a href="https://keras.io/">https://keras.io/</a></li>
-						<li><strong>keras-preprocessing</strong><br>
-							Data preprocessing and data augmentation module of the Keras deep learning library. Utilities are provided for working with image data, text data and sequence data. Keras is built on the Tensorflow library.<br>
-							<a href="https://pypi.org/project/Keras-Preprocessing/">https://pypi.org/project/Keras-Preprocessing/</a><br>
-							<a href="https://keras.io/">https://keras.io/</a></li>
-						<li><strong>librosa</strong><br>
-							Library for music and audio analysis. It's used to create music information retrieval systems.<br>
-							<a href="https://pypi.org/project/librosa/">https://pypi.org/project/librosa/</a>
-							<a href="http://librosa.github.io/librosa/">http://librosa.github.io/librosa/</a></li>
-						<li><strong>llvmlite</strong><br>
-							Lightweight LLVM (Low Level Virtual Machine) python binding for writing JIT (Just-In-Time) compilers. <br>
-							<a href="https://pypi.org/project/llvmlite/">https://pypi.org/project/llvmlite/</a></li>
-						<li><strong>markdown</strong><br>
-							Python implementation of John Gruber's Markdown. Used to convert Markdown syntax into HTML. <br>
-							<a href="https://python-markdown.github.io/reference/">https://python-markdown.github.io/reference/</a></li>
-						<li><strong>norbert</strong><br>
-							Implementation of multichannel (Norbert) Wiener filter. Notably used for speech enhancement and source separation. Takes in source spectrograms and the mixture's Time-Frequency representation.<br>
-							<a href="https://sigsep.github.io/norbert/">https://sigsep.github.io/norbert/</a></li>
-						<li><strong>numba</strong><br></li>
+
 						<li><strong>numpy</strong><br></li>
 						<li><strong>opt-einsum</strong><br></li>
 						<li><strong>pandas</strong><br></li>
